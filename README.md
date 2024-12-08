@@ -38,7 +38,18 @@
 pip install opencv-python-headless
 ```
 Запуск приложения:
+
 ```bash
 python main.py faces.jpg
 ```
 
+## Структура проекта
+``` bash
+project/
+├── main.py              # Основной Python-скрипт
+├── faces.jpg            # Тестовое изображение
+├── Dockerfile           # Инструкции для сборки Docker-образа
+└── .github/
+    └── workflows/
+        └── docker-publish.yml  # Конфигурация для GitHub Actions
+```
